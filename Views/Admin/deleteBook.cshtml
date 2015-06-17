@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin/_adminLayout.cshtml";
+}
+
+@model OnlineBookStore.Models.Product
+
+<div class="bg-danger">
+    <div class="container glyphicon-text-color">
+        <div align="center">
+            <h1>Delete Book from Data Base</h1>
+            <br /><br />
+
+            <form method="post" action="/Admin/deleteInDB">
+
+                <input type="text" name="title" placeholder="Book Title" />
+                <br />
+                <br />
+
+                <button type="submit" name="signINAdmin">Delete Book Data</button>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </form>
+        </div>
+    </div>
+</div>

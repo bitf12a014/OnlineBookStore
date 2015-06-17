@@ -1,0 +1,41 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin/_adminLayout.cshtml";
+}
+
+@model OnlineBookStore.Models.Product
+
+<div class="bg-danger">
+    <div class="container glyphicon-text-color">
+        <div align="center">
+            <h1>Update Book to DataBase</h1>
+            <h2>Updation of Book is only related to Price</h2>
+            <br /><br />
+
+            <form method="post" action="/Admin/updateInDB">
+
+                <input type="text" name="title" value="Book Title" />
+                <br />
+                <br />
+                <input type="text" name="price" value="Book Price" />
+                <br />
+                <br />
+
+                <button type="submit" name="updateBook">Update Book Price</button>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </form>
+        </div>
+    </div>
+</div>

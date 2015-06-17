@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+@model OnlineBookStore.Models.User
+
+<div>
+    <div align="center">
+        <h1>Sign Up/Get Register to buy Books Online</h1>
+        <h1>Customer Registeration</h1>
+        <br /><br />
+
+        <form action="/Customer/Register" method="post">
+            @Html.TextBoxFor(m => m.uName, new { placeholder = "Enter User Name" })
+            <br />
+            <br />
+
+            <input type="password" name="uPass" placeholder="Enter Password" />
+            <br />
+            <br />
+
+            <input type="password" name="uRePass" placeholder="Confirm New Password" />
+            <br />
+            <br />
+
+            @Html.TextBoxFor(m => m.uCreditCardNo, new { placeholder = "Enter Credit Card No #" })
+            <br />
+            <br />
+            @Html.TextBoxFor(m => m.uAddress, new { placeholder = "Enter Delivery Address" })
+            <br />
+            <br />
+
+            @Html.TextBoxFor(m => m.uContactNo, new { placeholder = "Enter Contact No #" })
+            <br />
+            <br />
+
+            <button type="submit" name="signIN">Sign Up</button>
+            <br />
+            <br />
+            <br />
+            <br />
+        </form>
+
+    </div>
+</div>

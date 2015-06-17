@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "~/Views/Shared/Admin/_adminLayout.cshtml";
+}
+
+@model OnlineBookStore.Models.Product
+
+<div class="bg-danger">
+    <div class="container glyphicon-text-color">
+        <div align="center">
+            <h1>Add Book to OSBS</h1>
+            <br /><br />
+
+            <form method="post" action="/Admin/addBookDataToDB" enctype="multipart/form-data">
+                
+                <input type="text" name="title" placeholder="Book Title" />
+                <br />
+                <br />
+
+                <input type="text" name="author" placeholder="Book Author" />
+                <br />
+                <br />
+
+                @Html.LabelFor(m => m.BookImage)
+                <br />
+                <input type="file" class="col-xs-offset-1" name="BookImage" />
+                <br />
+
+                <input type="text" name="price" placeholder="Book Price" />
+                <br />
+                <br />
+
+                <button type="submit" name="addBook">Add Book</button>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </form>
+        </div>
+    </div>
+</div>

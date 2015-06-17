@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "~/Views/Shared/Customer/_customerLayout.cshtml";
+}
+
+@model OnlineBookStore.Models.User
+
+<div class="bg-danger">
+    <div class="container glyphicon-text-color">
+        <div align="center">
+            <h1>Update Customer Information</h1>
+            <br /><br />
+
+            <form method="post" action="">
+
+                @Html.TextBoxFor(m => m.uCreditCardNo, new { placeholder = "Enter New Credit Card No #" })
+                <br />
+                <br />
+
+                @Html.TextBoxFor(m => m.uAddress, new { placeholder = "Enter New Delivery Address" })
+                <br />
+                <br />
+                
+                @Html.TextBoxFor(m => m.uContactNo, new { placeholder = "Enter New Contact No #" })
+                <br />
+                <br />
+
+                <button type="submit" name="signINAdmin">Update Info</button>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Online Sipra Book Store
+    </title>
+    <link rel="shortcut icon" href="~/Images/sip.jpg" />
+</head>
+
+<body style="background-color:lightskyblue">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <div>
+        <font color="#ffffff" size="+1">
+            <marquee bgcolor="#000080"
+                     direction="left" loop="20">
+                <strong>
+                    Welcome to Online Sipra Book Store(onlinesiprabookstore.com)
+                </strong>
+            </marquee>
+        </font>
+    </div>
+
+    <nav class="navbar navbar-btn" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../Admin/Index">Home</a>
+        </div>
+
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="../Admin/addBook">Add Book</a></li>
+                <li><a href="../Admin/updateBook">Update Book</a></li>
+                <li><a href="../Admin/deleteBook">Delete Book</a></li>
+                <li><a href="../Admin/viewBooks">View Books</a></li>
+                <li><a href="../Home/Index">SignOut</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left pull-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search Book Here" />
+                    <button type="submit" class="btn btn-success">Search</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <footer class="panel-footer alert-dismissable">
+        Copy Rights &copy; 2015 - All Rights Reserved - <a href="/Home/Index">
+            onlinesiprabookstore.com
+        </a>
+        <p class="pull-right">Designed By <font color="blue">Shehryar Sipra</font>.</p>
+    </footer>
+</body>
+</html>

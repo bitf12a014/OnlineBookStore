@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Online Sipra Book Store
+    </title>
+    <link rel="shortcut icon" href="~/Images/sip.jpg" />
+</head>
+
+<body style="background-color:lightskyblue">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <div>
+        <font color="#ffffff" size="+1">
+            <marquee bgcolor="#000080"
+                     direction="left" loop="20">
+                <strong>
+                    Welcome to Online Sipra Book Store(onlinesiprabookstore.com)
+                </strong>
+            </marquee>
+        </font>
+    </div>
+
+    <nav class="navbar navbar-btn" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../Customer/Index">Home</a>
+        </div>
+
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="../Customer/orderBook">Place Order</a></li>
+                <li><a href="../Customer/viewOrder">View Order</a></li>
+                <li><a href="../Customer/updateCustomerInfo">Update Customer Information</a></li>
+                <li><a href="../Customer/changePassword">Change Password</a></li>
+                <li><a href="../Home/Index">SignOut</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left pull-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search Book Here" />
+                    <button type="submit" class="btn btn-success">Search</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <div class="bg-primary">
+        <div class="container">
+
+            <h2 align="center">Telephone Queries</h2>
+
+            <div class="col-xs-3">
+                <h3>Online Queries</h3>
+
+                Tel: +92 333 6783606
+                08:00 to 18:00 Monday to Friday
+            </div>
+
+            <div class="col-xs-4">
+                <h3>Head Office Queries</h3>
+                Tel: +042 6610634
+                09:00 to 17:00 Monday to Friday
+            </div>
+
+            <div class="col-xs-3">
+                <h3>Book Store Queries</h3>
+                Find your nearest Book store.
+            </div>
+        </div>
+    </div>
+
+    <footer class="panel-footer alert-dismissable">
+        Copy Rights &copy; 2015 - All Rights Reserved - <a href="/Home/Index">
+            onlinesiprabookstore.com
+        </a>
+        <p class="pull-right">Designed By <font color="blue">Shehryar Sipra</font>.</p>
+    </footer>
+</body>
+</html>

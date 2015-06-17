@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+@model List<OnlineBookStore.Models.Product>
+
+<div class="container">
+    <div class="page-header">
+        <h2><font color="black">List Of All Books</font></h2>
+    </div>
+    <div class="row">
+
+        @foreach (var a in Model)
+        {
+
+            <div class="col-md-3" >
+                <img src="~/Images/@a.BookImage" style="width:150px;height:150px">
+                <h3>@a.BookTitle</h3>
+                <p>
+                    <div>Author :   <b>@a.BookAuthor</b></div>
+
+                    <div> Price  :     <b>@a.BookPrice</b></div>
+
+                    <div><a href="/Home/SignIN?pname=@a.BookTitle" class="btn btn-primary">Sign In to Purchase</a></div>
+                    <div><a href="/Customer/SignUP?pname=@a.BookTitle" class="btn btn-primary">Get Register to Purchase</a></div>
+                </p>
+            </div>
+            <div class="widget-footer">
+                <p>
+
+                </p>
+            </div>
+
+
+        }
+    </div>
+</div>
